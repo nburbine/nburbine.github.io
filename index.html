@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Nathaniel Burbine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="tabs.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nathaniel Burbine</title>
 </head>
 <body>
-<h1>Nathaniel Burbine</h1>
-<p>My initial homepage design</p>
-<h2>Links:</h2>
-<ul>
-	<li>
-		<a href="https://github.com/nburbine">GitHub</a>
-	</li>
-</ul>
-<h2>Contact me:</h2>
-<ul>
-	<li><p>Phone number</p></li>
-	<li><p>Email address</p></li>
-</ul>
+<div class="container-fluid" id="namebox">
+    <h1 class="text-center">Nathaniel Burbine</h1>
+</div>
+
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'About')" id="defaultTab">About</button>
+    <button class="tablinks" onclick="openTab(event, 'Work')">Experience</button>
+    <button class="tablinks" onclick="openTab(event, 'Find')">Find me</button>
+</div>
+
+<div id="About" class="tabcontent">
+    <h3><b>About me</b></h3>
+    <p>I am a Computer Science student at Northeastern University, where I am pursuing a Bachelor of Science degree.</p>
+    <p>Living in Key West, FL, I get to enjoy SCUBA diving and playing tennis year-round.</p>
+    <p>My primary interests are in computer hardware, back-end development, databases, and scripting.
+        Learning new technologies is a passion of mine.</p>
+    <p>To contact me, please find my information on my
+        <a href="https://drive.google.com/open?id=1XEVEiYdfT6mQth9p_OQoDT3PXQ2srZqJ" target="_blank">
+            resume.
+            <span class="glyphicon glyphicon-link"></span>
+        </a>
+    </p>
+</div>
+
+<div id="Work" class="tabcontent">
+    <h3><b>Work Experience</b></h3>
+    <p>During my time as a student I have had the opportunity to complete two temporary work experiences, each lasting
+        6-months.</p>
+    <p>My first was with the DevOps team at Dell EMC in Hopkinton, MA. I was assigned to create a monitoring solution
+        for test servers which exposed me to Docker and Nagios. I was able to rely on senior developers to verify my
+        design choices which taught me how to think like a software developer. I also got a taste of customer support
+        as I audited the support ticket backlog of DevOps team and followed up on open issues.</p>
+    <p>My next was with the IT department of the Monroe County School District where I was responsible for day-to-day
+        tech support of an elementary school of 550+ students and 50+ teachers/administrators. There, I was able to
+        refine my customer support skills through assisting users with varied technical and personal backgrounds.
+        I became adept at troubleshooting issues with Windows devices, printers, Chromebooks, and iPads.</p>
+</div>
+
+<div id="Find" class="tabcontent">
+    <h3><b>Links</b></h3>
+    <ul>
+        <li>
+            <a href="https://drive.google.com/open?id=1XEVEiYdfT6mQth9p_OQoDT3PXQ2srZqJ" target="_blank">
+                My Resume
+                <span class="glyphicon glyphicon-link"></span>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/nburbine" target="_blank">
+                My GitHub Profile
+                <span class="glyphicon glyphicon-link"></span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    document.getElementById("defaultTab").click();
+</script>
 </body>
 </html>
