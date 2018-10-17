@@ -11,8 +11,17 @@
     <title>Nathaniel Burbine</title>
 </head>
 <body>
+
 <div class="container-fluid">
     <h1 class="text-center">Nathaniel Burbine</h1>
+    <p class="text-center">
+        <script>
+            var username = "contact";
+            var hostname = "nburbine.com";
+            var address = username + "@" + hostname;
+            document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + address + "</a>");
+        </script>
+    </p>
 </div>
 
 <div class="tab">
@@ -27,12 +36,7 @@
     <p>Living in Key West, FL, I get to enjoy SCUBA diving and playing tennis year-round.</p>
     <p>My primary interests are in computer hardware, back-end development, databases, and scripting.
         Learning new technologies is a passion of mine.</p>
-    <p>To contact me, please find my information on my
-        <a href="https://drive.google.com/open?id=1XEVEiYdfT6mQth9p_OQoDT3PXQ2srZqJ" target="_blank">
-            resume
-            <span class="glyphicon glyphicon-link"></span>
-        </a>
-    </p>
+    <p>To learn more, please explore the tabs above.</p>
 </div>
 
 <div id="Work" class="tabcontent">
@@ -68,10 +72,10 @@
 </div>
 
 <footer>This site is built from scratch and is a work in progress! Check out the code on
-<a href="https://github.com/nburbine/nburbine.github.io" target="_blank">
-    GitHub
-    <span class="glyphicon glyphicon-link"></span>
-</a> </footer>
+    <a href="https://github.com/nburbine/nburbine.github.io" target="_blank">
+        GitHub
+        <span class="glyphicon glyphicon-link"></span>
+    </a></footer>
 
 <script>
     document.getElementById("defaultTab").click();
